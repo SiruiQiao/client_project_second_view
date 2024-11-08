@@ -1,0 +1,1172 @@
+/* for skip to mian content */
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    background-color: #00274C;
+    padding: 10px;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+/* Style the navigation menu */
+ul {
+    margin: 0;
+    padding: 0;
+    /* list-style: none; */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: .9em;
+}
+
+.navbar {
+    background-color: #00274C;
+    display: none
+}
+
+a:hover {
+    color: #FFCB05;
+}
+
+.logo {
+    font-size: 1.6em;
+    margin: 0;
+    margin-left: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: #00274C;
+}
+
+.logo,
+.navbar li {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: .35em;
+}
+
+.header {
+    background: white;
+    padding-bottom: .4em;
+}
+
+.toggleBtn {
+    display: inline-block;
+    position: absolute;
+    top: .45em;
+    left: .4em;
+    cursor: pointer;
+    font-size: 2em;
+    color: #00274C;
+}
+
+.toggleBtn:hover {
+    color: #FFCB05;
+}
+
+/* input {
+    display: none;
+    padding: 15px;
+} */
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked+.navbar {
+    display: block;
+}
+
+.navbar .active a {
+    background-color: #FFCB05;
+    color: #00274C;
+    padding: 0.2em 0.5em;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* for all page */
+body {
+    padding: 16px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2,
+h3,
+h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 0.85em;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2em;
+    color: #00274C;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1em;
+    color: #00274C;
+}
+
+h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.85em;
+    color: #00274C;
+}
+
+.item {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    /* color: #000; */
+}
+
+.fontlv3 {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.75em;
+    color: black;
+}
+
+.p1 {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: black;
+}
+
+.list {
+    margin-bottom: 10px;
+}
+
+/* Footer deisgn */
+footer {
+    background-color: #00274C;
+    padding: 40px 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+.mlogo {
+    grid-column-start: 1;
+    width: 100px;
+
+}
+
+.footer {
+    color: white;
+    font-family: "Merriweather", serif;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin: auto;
+}
+
+/* home page */
+/* Form container */
+form {
+    background-color: #00274C;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    color: white;
+    border-radius: 8px;
+    border: 5px solid #FFCB05;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 0.85em;
+}
+
+/* Email input styling */
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #00274C;
+    border-radius: 5px;
+    font-size: 0.85em;
+    color: #00274C;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #FFCB05;
+    color: #00274C;
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #FFD54F;
+}
+
+.white {
+    color: white;
+}
+
+.img1 {
+    width: 390px;
+    height: 100%;
+    margin: auto;
+    display: block;
+}
+
+.part2 {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.button {
+    font-family: "Merriweather", serif;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00274C;
+    color: white;
+    text-decoration: none;
+    font-size: 0.85em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #FFCB05;
+    color: #00274C;
+}
+
+.border {
+    border: 1px solid #00274C;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #f9f9f9;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+
+/* academic page */
+/* appointment form */
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#successMessage {
+    color: white;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+#appointmentForm {
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+}
+
+.form-container h2 {
+    background-color: #00274C;
+    color: white;
+    padding: 0px;
+}
+
+.img2 {
+    height: 200px;
+    width: 390px;
+    margin: auto;
+    object-fit: cover;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.p2 {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.85em;
+    color: black;
+    padding-bottom: 10px;
+    line-height: 1.6;
+}
+
+i {
+    color: #FFCB05;
+    padding-right: 5px;
+}
+
+.box2 {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    border: #FFCB05 8px solid;
+    border-radius: 5px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.box3 {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.button2 {
+    font-family: "Merriweather", serif;
+    display: inline-block;
+    padding: 10px 20px;
+    /* background-color: #FFCB05;  */
+    color: #00274C;
+    font-size: 0.85em;
+    text-decoration: underline;
+
+}
+
+.button2:hover {
+    color: #FFCB05;
+}
+
+.flyer {
+    width: 390px;
+    height: 100%;
+    margin: auto;
+    display: block;
+}
+
+/* health page */
+.box4 {
+    border: #FFCB05 8px solid;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+    padding-bottom: 15px;
+}
+
+.emergence {
+    border-radius: 50%;
+}
+
+.box5 {
+    display: grid;
+    grid-template-columns: 50px auto auto;
+    gap: 10px;
+}
+
+.item1 {
+    grid-column: span 2;
+    padding-left: 10px;
+    margin: auto;
+}
+
+.item2 {
+    grid-column: span 3;
+}
+
+.item3 {
+    grid-column: span 3;
+}
+
+.item4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.callbut {
+    color: #00274C;
+    text-decoration: underline;
+    font-size: 0.85em;
+    font-weight: 300;
+}
+
+.box6 {
+    display: grid;
+    grid-template-columns: 50px auto auto;
+    gap: 10px;
+}
+
+.item5 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.line {
+    border-right: 5px solid #FFCB05;
+}
+
+.FYG2 {
+    width: 390px;
+    margin: auto;
+    display: block;
+}
+
+.union {
+    width: 390px;
+    margin: auto;
+    display: block;
+}
+
+.indent {
+    text-indent: 5%;
+}
+
+/* tutor page */
+/* Centered text */
+.tutor {
+    width: 390px;
+    height: 150px;
+    object-fit: cover;
+    opacity: 0.5;
+    border-radius: 55px;
+    padding-bottom: 10px;
+}
+
+.eng {
+    width: 390px;
+    height: 150px;
+    object-fit: cover;
+    opacity: 0.5;
+    border-radius: 55px;
+    padding-bottom: 10px;
+}
+
+.box8 {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: auto;
+}
+
+.box7 {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: auto;
+}
+
+.centered {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button4 {
+    font-family: "Merriweather", serif;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00274C;
+    color: white;
+    text-decoration: none;
+    font-size: 0.85em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button4:hover {
+    background-color: #FFCB05;
+    color: #00274C;
+}
+
+.peer {
+    border: 1px solid #00274C;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #f9f9f9;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.tutor-info .bspace {
+    margin-bottom: 20px;
+}
+
+/* for table */
+@media only screen and (min-width: 600px) {
+
+    /* Hide toggle button on larger screens */
+    .toggleBtn {
+        display: none;
+    }
+
+    .navbar {
+        /* background-color: white; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.5em 0;
+    }
+
+    a {
+        color: white;
+    }
+
+    a:hover {
+        color: white;
+        ;
+    }
+
+    .navbar li {
+        background-color: #00274C;
+    }
+
+    .navbar .active a {
+        background-color: #FFCB05;
+        color: #00274C;
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    /* Optional: Add a hover effect for other items */
+    .navbar a:hover {
+        background-color: #FFCB05;
+        color: #00274C;
+    }
+
+    .header {
+        display: flex;
+        background-color: #00274C;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .logo {
+        color: #FFCB05;
+    }
+
+    body {
+        padding: 0px;
+    }
+
+    /* main{
+    margin-left: 20px;
+    margin-right: 20px;
+} */
+    /* Container for image and text */
+    /* Container for image and text */
+    .image-container {
+        position: relative;
+        width: 100%;
+    }
+
+    /* Style for the image */
+    .img1 {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        /* height: auto; */
+        display: block;
+    }
+
+    /* Background blur container for the text */
+    .text-background {
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0.5em 1em;
+        background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(5px);
+        /* border-radius: 8px;  */
+    }
+
+    /* Style for the text */
+    .text-background h2 {
+        color: #00274C;
+        font-size: 2em;
+        font-weight: bold;
+        margin: 0;
+        text-align: center;
+    }
+
+    .last {
+        margin: 50px;
+        font-size: 20px;
+        border-radius: 5px;
+        /* background-color: #FFCB05; */
+        padding: 10px;
+        border: #FFCB05 3px solid;
+        text-align: center;
+    }
+
+    .section2 {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #links {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        column-gap: 10px;
+    }
+
+    section {
+        margin-bottom: 0px;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .section3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+        padding-bottom: 30px;
+    }
+
+    .line1 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .border {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    h4 {
+        font-size: 1.2em;
+        background-color: #FFCB05;
+        margin-top: 0px;
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .p1 {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .button-container {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .mlogo {
+        justify-self: right;
+
+    }
+
+    /* Form container */
+    form {
+        background-color: #00274C;
+        padding: 20px;
+        max-width: 500px;
+        margin: auto;
+        color: white;
+        border-radius: 8px;
+        border: 5px solid #FFCB05;
+    }
+
+    /* Label styling */
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    /* Email input styling */
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #00274C;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #00274C;
+    }
+
+    /* Submit button styling */
+    input[type="submit"] {
+        background-color: #FFCB05;
+        color: #00274C;
+        padding: 10px;
+        width: 100%;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #FFD54F;
+    }
+
+    .white {
+        color: white;
+    }
+
+    /* acadecmic page table */
+    .academic {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .academic h2 {
+        text-align: center;
+        background-color: #FFCB05;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .img2 {
+        width: 100%;
+        height: 300px;
+    }
+
+    .p2 {
+        font-size: 1em;
+        padding-bottom: 10px;
+    }
+
+    .inline {
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 10px;
+    }
+
+    /* appointment form */
+    input[type="text"],
+    input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    #successMessage {
+        color: white;
+        font-weight: bold;
+        padding-top: 10px;
+    }
+
+    #appointmentForm {
+        padding-bottom: 40px;
+        margin-bottom: 50px;
+    }
+
+    .form-container h2 {
+        background-color: #00274C;
+        color: white;
+        padding: 0px;
+    }
+
+    .box2 {
+        border: none;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .box2 p {
+        /* margin: 50px; */
+        /* font-size: 20px; */
+        border-radius: 5px;
+        /* background-color: #FFCB05; */
+        padding: 10px;
+        border: #FFCB05 3px solid;
+        text-align: left;
+    }
+
+    .box3 {
+        margin-top: 20px;
+    }
+
+    .pp {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .flyer {
+        margin-bottom: 60px;
+        width: 100%;
+    }
+
+    /* health page */
+    .health {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .health h2 {
+        text-align: center;
+        background-color: #FFCB05;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .box4 {
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .box4 h3 {
+        margin-bottom: 15px;
+        margin-top: 0px;
+
+    }
+
+    .health h3 {
+        font-size: 1.2em;
+    }
+
+    .box5 p {
+        padding: 0px;
+    }
+
+    .FYG2 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: auto;
+        display: block;
+    }
+
+    .indent {
+        text-indent: 0%;
+    }
+
+    .union {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: auto;
+        display: block;
+        margin-bottom: 60px;
+    }
+
+    /* tutor page */
+    .tutor-info {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .box7 {
+        /* margin-top: 20px; */
+        margin: 0px;
+    }
+
+    .tutor {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        opacity: 0.5;
+        border-radius: 0px;
+        padding-bottom: 10px;
+    }
+
+    .box5 p {
+        padding-top: 30px;
+    }
+
+    .eng {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        opacity: 0.5;
+        border-radius: 0px;
+        padding-bottom: 10px;
+    }
+
+    .tutor-info .bspace {
+        margin-bottom: 30px;
+    }
+
+    .last-form {
+        margin-bottom: 60px;
+    }
+
+    .last-form .p1 {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1em;
+        padding: 0px;
+
+    }
+}
+
+/* for desktop */
+@media only screen and (min-width: 768px) {
+
+    /* home page */
+    .text-background {
+        position: absolute;
+        bottom: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0.5em 1em;
+        background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(5px);
+        /* border-radius: 8px;  */
+    }
+
+    .section2 {
+        /* width: 760px; */
+        margin: auto;
+        padding-left: 300px;
+        padding-right: 300px;
+        margin-bottom: 70px;
+    }
+
+    .last {
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+
+    .by-two {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 60px;
+    }
+
+    .text-container {
+        align-content: center;
+
+    }
+
+    .form-container h3 {
+        text-align: center;
+    }
+
+    /* academic page */
+    .academic {
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+
+    .by-two2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0fr 1fr 1fr;
+        column-gap: 60px;
+        row-gap: 2em;
+    }
+
+    .by-two2 h2 {
+        grid-column: 1/3;
+    }
+
+    .img2 {
+        grid-row: 2/3;
+    }
+
+    .by-two2 ul {
+        grid-row: 3/4;
+    }
+
+    .form-2 {
+        grid-row: 2/4;
+        align-content: center;
+    }
+
+    .flyer {
+        height: 100%;
+        width: 600px;
+    }
+
+    /* health page */
+    .health {
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+
+    .by-three {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+        column-gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .box4 {
+        flex: 1;
+        min-width: 250px;
+        height: 150px;
+        align-content: center;
+    }
+
+    .box5 p {
+        padding-top: 0px;
+    }
+
+    .box6 h2 {
+        margin-top: 60px;
+    }
+
+    .by-two h2 {
+        margin-top: 60px;
+        grid-column: 1/3;
+    }
+
+    .by-two p {
+        align-content: center;
+    }
+
+    .FYG2 {
+        height: 300px;
+        width: 100%;
+        object-fit: scale-down;
+        border: #00274C 1px solid;
+        border-radius: 50%;
+        margin: 30px;
+    }
+
+    .union {
+        height: 300px;
+        width: 100%;
+        border: #00274C 1px solid;
+        border-radius: 50%;
+        margin: 30px;
+    }
+
+    /* tutor page */
+    .tutor-info {
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+    .box5{
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+    .box5 p{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .box5 h3{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .tutor{
+        height: 300px;
+        margin-bottom: 50px;
+    }
+    .eng{
+        height: 300px;
+        margin-top: 50px;
+    }
+    .box8 h3{
+        top: 50%;
+    }
+    .by-two h3{
+        grid-column: 1/3;
+    }
+    .tutor-info .indent{
+        margin-top: 50px;
+    }
+    .in-two{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+        margin-top: 40px;
+    }
+    .tutor-info .indent {
+        margin-top: 0px;
+    }
+    .one{
+        align-content: center;
+    }
+}
+.not-working {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-color: #00274C; 
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+.not-working h1{
+    color: white;
+    font-size: 1.5em;
+    padding: 20px;
+    font-weight: 1000;
+    font-size: 4em;
+}
+.not-working h2{
+    color: white;
+    font-size: 1.2em;
+    padding: 20px;
+    font-weight: 200 ;
+    font-size: 1em;
+}
+.not-working p{
+    color: white;
+    font-size: 1em;
+    padding: 20px;
+}
+.logom{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+.error-container a{
+    margin-top: 10000px;
+}

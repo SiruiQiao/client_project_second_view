@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>UMSI Student Resource Portal</title>
+</head>
+
+<body>
+    <a href="#main" class="skip">Skip to Main Content</a>
+
+    <header>
+        <div class="header">
+            <h1 class="logo">Student Success Portal</h1>
+            <label for="toggle" class="toggleBtn">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <ul class="navbar">
+                <li class="item active"><a href="index.html">Home</a></li>
+                <li class="item"><a href="academic.html">Academic</a></li>
+                <li class="item"><a href="health.html ">Health</a></li>
+                <li class="item"><a href="tutor.html">Tutor</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main" class="container">
+        <section>
+            <div class="image-container">
+                <img class="img1" src="images/umsi-back.jpg" alt="A student walking on campus wearing a backpack">
+                <div class="text-background">
+                    <h2>Welcome to the UMSI Student Resource Portal</h2>
+                </div>
+            </div>
+            <p class="p1 last">This portal is designed to help you find the resources you need to succeed academically,
+                maintain a
+                healthy school-life balance, and get support in times of need.</p>
+        </section>
+
+        <section class="section2 by-two">
+            <div class="text-container">
+                <h3>Explore Our Support Services</h3>
+                <p class="p1"><strong>Academic Support:</strong> Access tools and services that enhance your learning
+                    experience, from
+                    study resources to academic advising.</p>
+                <p class="p1"><strong>Health Support:</strong> Find mental and physical health resources, including
+                    Counseling and
+                    Psychological Services.</p>
+                <p class="p1"><strong>Tutor Support:</strong> Connect with experienced tutors who can assist you with
+                    coursework and
+                    academic challenges.</p>
+            </div>
+            <div class="form-container">
+                <h3>Do you have any question?</h3>
+                <form action="https://formspree.io/f/xeoqagln" method="POST">
+                    <p class="p1 white">Have a question? Submit any question you have, and we’ll get back to you soon!</p>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    
+                    <label for="question">Question:</label>
+                    <textarea id="question" name="question" placeholder="Type your question here" required></textarea>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+
+        <section class="links section2">
+            <h3>Quick Links to Resources</h3>
+            <ul class="part2" id="links">
+                <li class="list"><a href="https://studyspaces.umich.edu/reserve-study-space" class="button">Reserve
+                        Study Space</a></li>
+                <li class="list"><a href="https://www.lib.umich.edu/" class="button">Libruary Services</a></li>
+                <li class="list"><a href="https://internationalcenter.umich.edu/" class="button">International
+                        Center</a></li>
+                <li class="list"><a href="https://www.si.umich.edu/student-experience/student-life"
+                        class="button">Student Life</a></li>
+            </ul>
+        </section>
+
+        <section class="section2 section3">
+            <h3 class="line1">Support Contacts</h3>
+            <div class="border">
+
+                <h4>UM Division of Public Safety (DPS)</h4>
+
+                <p class="p1">For any non-emergency safety issues, recommended to program into your cell phone</p>
+                <div class="button-container">
+                    <a href="tel:7347641131" class="button">Call 734-764-1131 </a>
+                </div>
+            </div>
+            <div class="border">
+                <h4>UM Hospital Psychiatric Emergency Room</h4>
+                <P class="p1">For emergent psychiatric assistance</P>
+                <div class="button-container">
+                    <a href="tel:7349964747" class="button">Call 734-996-4747</a>
+                </div>
+            </div>
+            <div class="border">
+                <h4>UM Sexual Assault Prevention and Awareness Center - 24/7 Hotline</h4>
+                <p class="p1">For support/resources for survivors of sexual assault, intimate partner violence,
+                    stalking, sexual
+                    harassment, and gender-based harassment.</p>
+                <div class="button-container">
+                    <a href="tel:73499363333" class="button">Call 734-936-3333</a>
+                </div>
+            </div>
+            <!-- The imformation is copy from student support webside https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources -->
+        </section>
+
+
+    </main>
+
+    <footer>
+        <img class="mlogo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <p class="footer">© Copyrights <span id="year"></span> UMSI Student Resource Portal <br> <br> <a
+                href="umsi.academicsuccess@umich.edu">Contact
+                Us</a></p>
+    </footer>
+</body>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
+</html>

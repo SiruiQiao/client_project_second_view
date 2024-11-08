@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Academic Support</title>
+</head>
+
+<body>
+    <a href="#main" class="skip">Skip to Main Content</a>
+    <header>
+        <div class="header">
+            <h1 class="logo">Student Success Portal</h1>
+            <label for="toggle" class="toggleBtn">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <ul class="navbar">
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item active"><a href="academic.html">Academic</a></li>
+                <li class="item"><a href="health.html ">Health</a></li>
+                <li class="item"><a href="tutor.html">Tutor</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <main id="main">
+
+        <!-- The information copy form this website. https://sites.google.com/umich.edu/msiacademicadvising/home -->
+        <section class="academic">
+            <h2>Academic Advising Overview</h2>
+            <p class="p1">Academic Advising is a process where students envision, execute, and reflect on their academic
+                plans with guidance from a qualified UMSI Academic Advisor. Students share their goals, challenges, and
+                questions with their academic advisor, and their academic advisor contributes knowledge of
+                university and program requirements, policies, and processes. Together, we develop an academic plan
+                that aligns with the student's personal and professional goals.
+            </p>
+        </section>
+
+        <section class="academic by-two2">
+            <h2>How can your Academic Advisor help you?</h2>
+            <img src="images/ad.jpg" alt="Two men sitting at a table, engaging in a conversation" class="img2">
+            <ul>
+                <li class="list p2"><i class="fa fa-check-square"></i> Creating an individualized academic plan</li>
+                <li class="list p2"><i class="fa fa-check-square"></i> Interpreting an academic policy or procedure</li>
+                <li class="list p2"><i class="fa fa-check-square"></i> Discussing concerns about a particular course
+                </li>
+                <li class="list p2"><i class="fa fa-check-square"></i> Connecting with student support resources and
+                    services</li>
+                <li class="list p2"><i class="fa fa-check-square"></i> Navigating a disruption to your MSI experience
+                </li>
+            </ul>
+            <!-- <div class="inline">
+                <p><a href="https://si-umich.navigate.eab.com/app/#/authentication/remote/" class="button">Scheduled 1:1
+                        Appointment</a></p>
+                <p><a href="https://calendar.google.com/calendar/u/0/embed?src=umsi.advising.msi@umich.edu&ctz=America/New_York"
+                        class="button">In Appointment</a></p>
+            </div> -->
+
+            <div class="form-container form-2">
+                <form id="appointmentForm" action="https://formspree.io/f/xeoqagln" method="POST">
+                    <h2>Book an Appointment</h2>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <input type="submit" value="Submit">
+                    <p id="successMessage" style="display: none;">Your appointment has been successfully booked!</p>
+                </form>
+            </div>
+
+        </section>
+
+        <section class="box2 academic">
+            <h2>MSI Degree Requirements</h2>
+            <img src="images/grade.png" alt="Graphic displaying degree requirement." class="img3">
+            <p class="p1">To earn a Master of Science in Information at the School of Information, you must complete a
+                minimum of
+                48 credit hours of graduate coursework, with a minimum grade average of B (3.0 minimum cumulative GPA
+                required), including required coursework. Note that within the 48 credit hours of graduate coursework, a
+                minimum of 39 credits must be coursework taken within UMSI (SI credit).</p>
+        </section>
+
+        <section class="academic">
+            <h2>Course Search Help</h2>
+            <div class="box3 inline">
+                <p><a href="https://docs.google.com/spreadsheets/d/1FiG9NnyZGJdMLeuY7ZIiRMbN4LPDrx_8ZUlyRMaAT_Q/edit?gid=0#gid=0"
+                        class="button">UMSI Course Catalog</a></p>
+                <p><a href="https://atlas.ai.umich.edu/" class="button">Atlas</a></p>
+                <p><a href="https://docs.google.com/document/d/1D8ShTox-3VLjFxu10rXeRput0uY1RPV2U9plFXhlO20/edit"
+                        class="button">Fall 2024 UMSI Electives</a></p>
+            </div>
+        </section>
+
+        <section class="academic">
+            <h2>Deadlines/Important Dates for Full Term Classes at UMSI </h2>
+            <p class="pp"><a href="https://ro.umich.edu/calendars?term=130&type%5B107%5D=107&type%5B108%5D=108&keys="
+                    class="button2">See the
+                    Academic Calendar for additional important dates!</a></p>
+            <img src="images/flyer.png" alt="Flyer for UMSI Fall Semester 2024 events" class="flyer">
+        </section>
+
+    </main>
+
+    <footer>
+        <img class="mlogo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <p class="footer">© 2024 UMSI Student Resource Portal <br> <br> <a href="umsi.academicsuccess@umich.edu">Contact
+                Us</a></p>
+    </footer>
+</body>
+<script>
+    document.getElementById("appointmentForm").addEventListener("submit", function (event) {
+        event.preventDefault(); 
+        document.getElementById("successMessage").style.display = "block";
+        event.target.reset();
+    });
+</script>
+
+</html>
